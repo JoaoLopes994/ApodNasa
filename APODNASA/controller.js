@@ -13,5 +13,8 @@ class Controler {
 }
 let controler = new Controler();
 
+document.getElementById("btn").addEventListener("click",controller.adicionaFoto)
+var data = document.querySelector("#data")
+
 
 

@@ -3,7 +3,7 @@ class Model  {
         this._copy = "";
         this._date = btn.value;
         this._image = "";
-        this._title = "";
+        this._explanation = "";
 
     }
 
@@ -35,7 +35,7 @@ class Model  {
         this._copy = dados.copyright;
         this._image = dados.url;
         this._date = dados.date;
-        this._title = dados.title;
+        this._explanation = dados.title;
         
     }
 
@@ -48,7 +48,7 @@ class Model  {
     getDate() {
         return this._date;
     }
-    getTitle() {
-        return this._titulo;
+    getExplanation() {
+        return this._explanation;
     }
 }

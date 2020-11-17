@@ -6,7 +6,7 @@ class Visor {
         let banner = document.createElement("div");
 
         banner.innerHTML = `<h2>${model.getTitle() }</h2>
-                            <img src=${ model.getImage() } >
+                            <img src=${ model.getExplanation() } >
                             <p> ${model.getDate}</p>
                             <p> ${model.getCopyright}</p>`
 
@@ -16,5 +16,3 @@ class Visor {
     }
 
 }
-let busca = document.getElementById("Buscar")
-busca.addEventListener('click', Controler.achaFoto) 
