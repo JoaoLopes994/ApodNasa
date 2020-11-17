@@ -2,10 +2,10 @@
 class Controler {
     constructor (){}
 
-    adicionaFoto() {
-
+    adicionaFoto(event) {
+        event.preventDefault()
         let usuario = new Model();
-        usuario.adicionaFoto();
+        usuario.achaFoto(data.value);
 
         let vitrine = new Visor();
         vitrine.renderizar(usuario);
@@ -13,8 +13,8 @@ class Controler {
 }
 let controler = new Controler();
 
-document.getElementById("btn").addEventListener("click",controller.adicionaFoto)
-var data = document.querySelector("#data")
+document.getElementById("form").addEventListener("submit",controler.adicionaFoto)
+var data = document.querySelector("#buscar") 
 
 
 

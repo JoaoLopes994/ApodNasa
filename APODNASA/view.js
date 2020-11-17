@@ -1,17 +1,17 @@
 class Visor {
     constructor() {}
 
-    renderizar( model ) {
+    renderizar(model) {
         
-        let banner = document.createElement("div");
+        let banner = document.getElementById("baner");
 
-        banner.innerHTML = `<h2>${model.getTitle() }</h2>
-                            <img src=${ model.getExplanation() } >
-                            <p> ${model.getDate}</p>
-                            <p> ${model.getCopyright}</p>`
+        banner.innerHTML = `<h2>${model.getCopyright()}</h2>
+                            <img src=${ model.getImage()} >
+                            <p> ${model.getDate()}</p>
+                            <p> ${model.getExplanation()}</p>`
 
 
-        document.appendChild(banner);
+        
 
     }
 

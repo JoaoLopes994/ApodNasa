@@ -1,8 +1,8 @@
 class Model  {
-    constructor(copy,date,image,title) {
+    constructor() {
         this._copy = "";
-        this._date = btn.value;
         this._image = "";
+        this._data = data.value;
         this._explanation = "";
 
     }
@@ -19,8 +19,8 @@ class Model  {
                 this._atualiza(dados)
             }
         })
-
-        request.open("GET", 'https://api.nasa.gov/planetary/apod?api_key=4DEWXdrd6bPG99Nvd9Yd0eicTyFHyi2QjYWlTlgv&date=' + this._date, false)
+        console.log(this._data)
+        request.open("GET", "https://api.nasa.gov/planetary/apod?api_key=4DEWXdrd6bPG99Nvd9Yd0eicTyFHyi2QjYWlTlgv&date=" + this._data, false)
         
         request.send();
     }
@@ -34,8 +34,8 @@ class Model  {
     _atualiza(dados){ 
         this._copy = dados.copyright;
         this._image = dados.url;
-        this._date = dados.date;
-        this._explanation = dados.title;
+        this._data = btn.data;
+        this._explanation = dados.explanation;
         
     }
 
@@ -46,7 +46,7 @@ class Model  {
         return this._image;
     }
     getDate() {
-        return this._date;
+        return this._data;
     }
     getExplanation() {
         return this._explanation;
