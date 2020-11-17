@@ -1,0 +1,20 @@
+body {
+    background: url(https://cdn.wallpapersafari.com/23/77/DP60WY.jpeg);
+    max-width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    line-height: 1;
+    color: white;
+}
+h1 {
+    text-align: center;
+}
+#data {
+    padding: 8px;
+    margin: 10px;
+}
+footer {
+    padding: 10px;
+    
+}
